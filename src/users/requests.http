@@ -3,14 +3,39 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "test@test.com",
-    "password":" 12345678",
-    "res":"fd"
+    "email": "signup92@signup.com",
+    "password":"12345678"
 }
+
+### Signin
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "signup92@signup.com",
+    "password":"12345678"
+}
+
+### Current user
+GET http://localhost:3000/auth/whoami
+
+### Signout
+POST http://localhost:3000/auth/signout
+
+
+### Set a color
+GET http://localhost:3000/auth/colors/red
+
+
+### Get the color
+GET http://localhost:3000/auth/colors
+
+
+
 
 ### Find a particular user with id
 
-Get http://localhost:3000/auth/1
+Get http://localhost:3000/auth/2
 
 
 
